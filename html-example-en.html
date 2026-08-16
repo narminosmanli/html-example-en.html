@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cybersecurity Blog</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; line-height: 1.6; color: #222; }
+    header, footer { background: #1e2a38; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    .box { border: 1px solid #ccc; padding: 15px; margin: 15px 0; border-radius: 6px; }
+    #important { background: #fff3cd; border-color: #ffc107; }
+    table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+    th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+    form div { margin-bottom: 10px; }
+    #logo-div { text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP: semantic header + nav -->
+  <header>
+    <h1>Cybersecurity Blog</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- div + id example -->
+    <div id="logo-div">
+      <img src="https://placehold.co/150x80?text=LOGO" alt="Blog logo" width="150" height="80">
+    </div>
+
+    <!-- SEMANTIC: section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm an <strong>information security</strong> student and I <em>share</em> what I learn on this blog.
+      Below you'll find some core cybersecurity topics.</p>
+      <p><a href="https://owasp.org" target="_blank">OWASP official website</a> — one of the best resources for web security.</p>
+    </section>
+
+    <!-- SEMANTIC: article + class example -->
+    <section id="topics">
+      <h2>Main Topics</h2>
+
+      <article class="box">
+        <h3>1. Network Security</h3>
+        <p>Networking basics, firewalls, IDS/IPS systems.</p>
+        <ul>
+          <li>Firewall</li>
+          <li>VPN</li>
+          <li>IDS / IPS</li>
+        </ul>
+      </article>
+
+      <article class="box" id="important">
+        <h3>2. Cryptography (Important!)</h3>
+        <p>Order of encryption methods:</p>
+        <ol type="1">
+          <li>Symmetric encryption</li>
+          <li>Asymmetric encryption</li>
+          <li>Hash functions</li>
+        </ol>
+      </article>
+
+      <article class="box">
+        <h3>3. Key Terms</h3>
+        <dl>
+          <dt>CVE</dt>
+          <dd>Standard list of known vulnerabilities</dd>
+          <dt>SOC</dt>
+          <dd>Center where security incidents are monitored</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- TABLE example -->
+    <section>
+      <h2>Certificate Comparison</h2>
+      <table>
+        <tr>
+          <th>Certificate</th>
+          <th>Level</th>
+          <th>Focus</th>
+        </tr>
+        <tr>
+          <td>Security+</td>
+          <td>Beginner</td>
+          <td>General fundamentals</td>
+        </tr>
+        <tr>
+          <td>CCNA</td>
+          <td>Intermediate</td>
+          <td>Networking</td>
+        </tr>
+        <tr>
+          <td>CEH</td>
+          <td>Intermediate-advanced</td>
+          <td>Ethical hacking</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- FORM example -->
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form action="#" method="get">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="name@example.com">
+        </div>
+        <div>
+          <label for="subject">Subject:</label><br>
+          <select id="subject" name="subject">
+            <option value="question">I have a question</option>
+            <option value="suggestion">Suggestion</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cybersecurity Blog</p>
+  </footer>
+
+</body>
+</html>
